@@ -1,3 +1,11 @@
+mod source;
+
+use source::kafka_source;
+
 fn main() {
-    println!("Hello, world!");
+    let a  = kafka_source {
+        host: "123"
+    };
+
+    a.set();
 }
